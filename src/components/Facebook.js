@@ -9,10 +9,17 @@ export default class Facebook extends Component {
     email: "",
     picture: "",
   };
+  responseFacebook = (response) => {
+    console.log(response);
+  };
+  componentClicked = () => {
+    console.log("clicked");
+  };
+
   render() {
-    console.log(process.env.REACT_APP_FACEBOOK_APP_ID);
     let fbContent;
     if (this.state.isLoggedIn) {
+      fbContent = null;
     } else {
       fbContent = (
         <FacebookLogin
@@ -24,6 +31,6 @@ export default class Facebook extends Component {
         />
       );
     }
-    return <div></div>;
+    return <div>{fbContent}</div>;
   }
 }
