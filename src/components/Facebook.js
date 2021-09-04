@@ -35,7 +35,7 @@ export default class Facebook extends Component {
             padding: "20px",
           }}
         >
-          {/* <img src={this.state.picture} alt={this.state.name} /> */}
+          <img src={this.state.picture} alt={this.state.name} />
           <h2>Welcome, {this.state.name}</h2>
           Email: {this.state.email}
         </div>
