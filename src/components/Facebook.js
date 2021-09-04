@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import FacebookLogin from "react-facebook-login";
 
 export default class Facebook extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+  state = {
+    isLoggedIn: false,
+    userID: "",
+    name: "",
+    email: "",
+    picture: "",
+  };
+  render() {
+    return <div></div>;
+  }
 }
